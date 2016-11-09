@@ -1,0 +1,62 @@
+<div class="row" style="height: 100px;"></div>
+<div class="row">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+        <div uib-slide ng-repeat="slide in slides track by $index" index="$index">
+            <img class="img-thumbnail"  ng-src="{{slide.image}}" style="height: 550px;width: 1500px">
+        </div>
+    </div>
+    <div style="height: 20px"></div>
+    <div class="row" background="images/background2.jpg" style="height: 300px;">
+        <div class="container">
+            <div class="text-collapse col-md-3 col-xs-8 col-xs-offset-2" >
+                <button type="button" class="btn btn-default hvr-bob" ng-click="isCollapsed = !isCollapsed">אבץ</button>
+                <div uib-collapse="isCollapsed">
+                    <div class="well well-lg">ייחודם של מרזבים העשויים מאבץ ומאבץ מיושן, הינם במראה העדין והאציל משהו
+                        המתווסף לעיצובו של המבנה.
+                    </div>
+                </div>
+            </div>
+            <div class="text-collapse col-md-3 col-xs-12" >
+                <button type="button" class="btn btn-default hvr-bob" ng-click="isCollapsed3 = !isCollapsed3">אלומניום</button>
+                <div uib-collapse="isCollapsed3">
+                    <div class="well well-lg">מרזבי האלומיניום מובילים ביתרונם בגלל עלויות זולות יותר ומגיעים במגוון
+                        צבעים
+                        רחב המאפשר התאמה מרבית ללקוח, לטעמו , למבנה ולצבע הבית/העסק שלו.
+                    </div>
+                </div>
+            </div>
+            <div class="text-collapse col-md-3 col-xs-12" >
+                <button type="button" class="btn btn-default hvr-bob" ng-click="isCollapsed2 = !isCollapsed2">נחושת</button>
+                <div uib-collapse="isCollapsed2">
+                    <div class="well well-lg">מרזבי נחושת מיוצרים בבית המלאכה אישי לפי מידות הגגות, ומורכבים בחלקים על
+                        ידי
+                        צוות מומחים באתר העבודה. את החומר ניתן לעבד בכל צורה בכדי שיתאים את עצמו למראה הבניין.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2" style="direction: rtl;font-family: Alef">
+                <h2>מי גשמים</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2  col-xs-8 col-xs-offset-2 "
+                     style="direction: rtl;font-size: 18px;font-family: Alef">
+                    <p>ארץ ישראל כידוע, ממוקמת במזרח התיכון, ולא מבורכת בגשמים.</p>
+                    <p>למרות זאת מספיק גשם אחד רציני בכדי לעורר נזק משמעותי לבניין.</p>
+                    <p>למרזבים יש תפקיד חשוב מאד בריכוז מי הגשמים מגג של בניין. <p>
+                </p> המים שנאספים בגג המבנה יורדים לתוך תעלת המרזב ומתנקזים ביעילות.</p>
+                    <p>המרזב הוא תעלה צרה שמהווה את המרכיב של כל מערכת הגג אשר אוספת מי גשמים ומסיטה אותם מגג הבית על ידי ניקוז.</p>
+                    <p>המטרה העיקרית של מרזב הגשם היא לאסוף את המים שנערמים על גג הבית ולפזר אותם בסופו של דבר מחוץ לתחום הגג</p>
+                    <p>וגם להגן על משטחים צבועים על ידי צמצום החשיפה למים.</p>
+                    <p>מרזבים לגגות ניתן לבנות ממגוון של חומרים לרבות ברזל, עופרת, אבץ, פלדה, נחושת, אלומיניום, בטון ועץ.</p>
+                    <p>מערכות המרזב דורשות תחזוקה על מנת להבטיח הגנה על הבית שלך.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
