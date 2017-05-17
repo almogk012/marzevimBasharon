@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    background: url(../images/images.jpg);
+    font-family: Alef
+}
+
+article {
+    height: auto;
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    background-color: #a7cfe1;
+}
+
+#btn-horiz {
+    color: black;
+    font-weight: bold;
+    padding: 2px 10px !important;
+    outline: none !important;
+    left: 24px;
+}
+
+#btn-horiz:hover {
+    font-weight: bold;
+    color: black;
+}
+
+#myModalLabel {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.zor-kesher{
+    width: 300px;
+    /*margin: 0 10%;*/
+    height: 170px;
+    top: 20%;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: -2px 4px 12px 6px black;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.zor-kesher-hide{
+    left:-300px;
+    transition: all 500ms;
+}
+.zor-kesher-active{
+    left:10px;
+    transition: all 500ms;
+}
+.zor-kesher .title{
+    text-decoration: underline;
+}
+.zor-kesher a,.zor-kesher a:focus{
+    color:black;
+}
+.zor-kesher a:hover,.zor-kesher a:active{
+    color:gray;
+    text-decoration: none;
+}
+
+#menu ul {
+    direction: rtl;
+}
+
+#menu ul li {
+    float: right;
+}
+
+#menu > ul > li:last-child {
+    direction: ltr;
+    width: 54px;
+    text-decoration: none !important;
+}
+
+#menu ul li a {
+    font-size: 17px;
+    color: black !important;
+}
+
+
+@media screen and (min-width:992px) {
+    #menu ul li a.orange-border:hover {
+        text-decoration: none;
+        border-bottom: 5px solid #ff992f;
+    }
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: transparent !important;
+}
+.links{
+    float: left;
+    margin-left: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    padding: 8px;
+}
+.links a,.links a:focus{
+    color:black;
+}
+.links a:hover,.links a:active{
+    color:white;
+    text-decoration: none;
+}
+.links:hover{
+    transition: all 750ms;
+    background-color:#7ac4cc;
+    cursor: pointer;
+    color: white;
+}
+.contain-footer{
+    direction: rtl;
+    text-align: center;
+}
+.first-link-footer{
+    margin:0;
+}
+.address-footer{
+    font-size: 16px;
+}
+.share-facebook-footer{
+    float: left;
+
+    cursor: pointer
+}
+.share-facebook-footer:hover{
+    color:#999999;
+    transition: all 150ms;
+}
+.share-facebook-footer i{
+    color:#7ac4cc;
+}
+.footer-header{
+    display: inline;
+}
+#menu ul li a:focus {
+    background-color: transparent !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: white;
+    border-radius: 5%;
+}
+
+.dropdown-menu li a:hover {
+    background-color: transparent !important;
+    text-decoration: underline !important;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+}
+
+.goToTop {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 17px;
+    right: 20px;
+    z-index: 10000;
+    margin: 8px;
+    -moz-opacity: 0.60;
+    opacity: .60;
+    filter: alpha(opacity=60);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+address {
+    margin-bottom: 0 !important;
+}
+.modal-header{
+    padding: 6px !important;
+}
+.modal-footer{
+    padding: 0 !important;
+}
+
+.collapsible {
+    margin-bottom: 20px;
+    background: #EBEBEB;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    width: 500px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #333333;
+    display: block;
+    overflow: hidden;
+}
+
+.collapsible button {
+    height: 135px;
+    float: right;
+    border: 1px solid #999999;
+    background: #999999;
+    color: #CECECE;
+    margin-left: 10px;
+}
+
+.collapsible button:hover {
+    background: #990000;
+    border: 1px solid #990000;
+}
+
+.img-thumbnail{
+    object-fit: scale-down;
+}
+
+.modal {
+    position: fixed;
+    top: auto !important;
+    right: 0;
+    left: 0;
+    bottom: auto !important;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-weight: bold;
+    padding: 25px;
+}
+
+@media only screen and (max-width: 425px) {
+
+    #menu ul {
+        direction: rtl;
+    }
+
+    #menu ul li {
+        float: none;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: transparent !important;
+    }
+
+    .navbar-toggle {
+        margin-right: 0 !important;
+    }
+    .navbar-nav {
+        margin: 0.5px -15px !important;
+    }
+
+    #menu ul li a {
+        font-size: 20px;
+        padding: 15px 2px 0 0;
+        text-align: right;
+    }
+
+    .dropdown-menu {
+        display: none !important;
+    }
+
+    .img-thumbnail {
+        height: 470px !important;
+    }
+
+    .open .dropdown-menu {
+        display: block !important;
+    }
+
+    footer div div div {
+        display: block !important;
+    }
+
+    #clps-text {
+        top: -83px !important;
+        position: relative !important;
+        direction: rtl !important;
+    }
+
+    .modal-header {
+        padding: 1px !important;
+    }
+
+    .modal-title {
+        text-align: center !important;
+    }
+
+    .modal-body {
+        height: 55px !important;
+        padding: 0 !important;
+
+    }
+
+    .modal-footer {
+        padding: 0 !important;
+    }
+
+}
+
+.text-home h3 {
+    font-family: Alef;
+
+}
+
+.text-home p {
+    font-family: Alef;
+    font-size: 18px;
+    text-align: justify;
+    direction: rtl;
+}
+
+.modal-body p {
+    direction: rtl;
+}
+
+.modal {
+    text-align: center;
+}
+
+.modal-body p {
+    margin: 0 auto;
+}
+
+#about {
+    direction: rtl;
+    font-size: 20px;
+}
+
+#about p span {
+    font-weight: bold;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: -15px;
+}
+
+.text-category {
+    direction: rtl;
+    font-size: 18px;
+    text-align: justify
+}
+
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 60%;
+    }
+}

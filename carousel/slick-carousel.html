@@ -1,0 +1,45 @@
+<div class="slick-carousel-container">
+    <!--<div class=" modal fade hidden-xs"  id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">-->
+        <!--<div class="modal-dialog">-->
+            <!--<div class="modal-content">-->
+                <!--<div class="modal-header">-->
+                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>-->
+                    <!--</button>-->
+                <!--</div>-->
+                <!--<div class="modal-body">-->
+                    <!--<div class="slider-for">-->
+                        <!--<div class="img-block-modal"  style="background-image:url({{image}})">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="slick-carousel carousel-{{index}}">
+        <div ng-if="type == 'home'" ng-repeat="slide in model | orderBy:order">
+            <div class="block-slide" ng-click="open(slide.image)" data-toggle="modal" data-target="#myModal3">
+                <div class="img-block"  style="background-image:url({{slide.image}})">
+                </div>
+            </div>
+
+        </div>
+
+        <div ng-if="type == 'categories'" ng-repeat="slide in model | orderBy:order">
+            <div class="block-slide" ng-click="open(slide.image)" data-toggle="modal" data-target="#myModal3">
+                <div class="img-block fixPadding" style="background-image:url({{slide.image}})">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- Modal -->
+
+
+
+<!--// how to use the slick-->
+<!--<slick-carousel ng-if="celebrities" data-type="celebrity" data-autoplay="true" data-slides="6" data-model="celebrities" data-index="4"></slick-carousel>-->
+
